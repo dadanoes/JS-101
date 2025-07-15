@@ -132,6 +132,7 @@ for (const key in user4) {
     console.log(`Kunci: ${key}, Nilai: ${user4[key]}`);
   }
 }
+
 // 2. Menggunakan key, value, dan entries //
 let colors = { red: "#FF0000", green: "#00FF00", blue: "#0000FF" };
 console.log(Object.keys(colors)); // Output: ["red", "green", "blue"]

@@ -1,6 +1,6 @@
 //~~~~~~~~~~~~ Array ~~~~~~~~~~~~//
 
-//​‌‍‌⁡⁣⁢⁣ ===== Membuat Array Method =====⁡​ //
+//​‌‍‌⁡⁣⁢⁣ ===== metode arrays =====⁡​ //
 
 // 1. ⁡⁣⁢⁣Menggunakan notasi array literal:⁡
 let fruits = ["apple", "banana", "mango"];

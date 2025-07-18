@@ -10,3 +10,6 @@ basic function:
 - Function Return Value:
     - secara default function tidak mempunyai Value
     - kata kunci 'return' dapat memasukan value dalam function
+- Menghentikan Eksekusi Function:
+    - kata kunci 'return' dapat digunakan untuk menghentikan eksekusi function
+    - setelah 'return' ditulis, maka kode di bawah 'return' tidak akan dieksekusi

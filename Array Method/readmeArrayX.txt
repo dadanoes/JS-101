@@ -13,8 +13,7 @@ Array
 - i = index
 - i++ = increment
 
- ** Common Array Methods (Metode Array Paling Sering Muncul)**
-
+ Common Array Methods (Metode Array Paling Sering Muncul)
 - slice(): Mengembalikan sebagian dari array.
 - splice(): Menambah/menghapus elemen dalam array.
 - concat(): Menggabungkan array.
@@ -22,14 +21,13 @@ Array
 - map(): Membuat array baru dengan menerapkan fungsi ke setiap elemen.
 - filter(): Membuat array baru dengan elemen yang memenuhi kondisi.
 - reduce(): Mereduksi array menjadi nilai tunggal.
+- find(): Mengembalikan elemen pertama yang memenuhi kondisi
 ------------------------------------------------------
-
 - forEach(): Menjalankan fungsi pada setiap elemen array.
 - for...of: Melakukan iterasi pada setiap elemen array.
 - for...in: Melakukan iterasi pada setiap properti objek.
 - every(): Memeriksa apakah setiap elemen memenuhi kondisi.
 - some(): Memeriksa apakah ada setidaknya satu elemen yang memenuhi kondisi.
-- find(): Mengembalikan elemen pertama yang memenuhi kondisi.
 - findIndex(): Mengembalikan indeks elemen pertama yang memenuhi kondisi.
 - sort(): Mengurutkan elemen array.
 - reverse(): Membalikkan urutan elemen array.

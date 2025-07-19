@@ -96,7 +96,6 @@ console.log(namanya); // Output: John
 console.log(rest); // Output: { age: 27, occupation: 'Developer' }
 
 // 6. Destructuring in Function Parameters (Destructing di parameter fungsi)
-// -
 
 const mahasiswa = {
   namaMahasiswa: "Ridho",

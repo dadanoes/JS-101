@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* ====== OBJEK FREEZE ======= */
+      // - menjadi imun, tidak bisa dirubah, dihapus, ditambah
+      const person7 = {
+        name: "Anjali",
+        age: 25,
+      };
+
+      Object.freeze(person7);
+
+      person.age = 30; // This will have no effect
+      person.city = "Mumbai"; // Cannot add new properties
+      delete person7.name; // Cannot delete properties
+
+      console.log(person7); // Output: { name: "Anjali", age: 25 }
+
+      /* ====== OBJEK SEAL ======= */
+      // - mencegah penambahan dan pengurangan, tetapi bisa memodifikasi
+
+      const car2 = {
+        brand: "Honda",
+        model: "Civic",
+      };
+
+      Object.seal(car2);
+
+      car2.model = "Accord"; // Allowed: Existing property modified
+      car2.year = 2020; // Not allowed: Cannot add new properties
+      delete car.brand; // Not allowed: Cannot delete properties
+
+      console.log(car2); // Output: { brand: "Honda", model: "Accord" }
+    </script>
+  </body>
+</html>

@@ -6,7 +6,6 @@ function manipulasiArray(arr, callback) {
   // 1. 'arr': Sebuah array yang akan dimanipulasi.
   // 2. 'callback': Sebuah fungsi (ini adalah Higher-Order Function!) yang akan dipanggil untuk setiap elemen array.
   let hasil = [];
-  // Mendeklarasikan sebuah array kosong bernama 'hasil' yang akan menyimpan hasil manipulasi.
   for (let i = 0; i < arr.length; i++) {
     // Memulai loop for yang akan mengiterasi (mengunjungi) setiap elemen dalam array 'arr'.
     // 'i' adalah indeks elemen saat ini.

@@ -1,4 +1,4 @@
-======= Arrow Function ======
+======= Arrow Function ES6 ======
 
 Arrow Function adalah cara singkat untuk menulis function expression
 
@@ -16,3 +16,9 @@ console.log(tambah(4, 5));
 ⁡⁣⁢⁣menjadi⁡:
 let tambah = (a, b) => a + b;
 console.log(tambah(4, 5));
+
+*kekurangan Arrow function
+tidak memiliki argumen object
+tidak bisa menggunakan function generator
+tidak bisa mengakses this
+tidak bisa mengakses super(OOP)

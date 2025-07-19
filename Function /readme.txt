@@ -1,4 +1,6 @@
 ========== Function ===========
+- Parameter adalah variabel yang didefinisikan dalam deklarasi function
+- Argumen adalah nilai yang diberikan saat function dipanggil
 
 - blok program yang berjalan saat kita panggil
 - function dapat digunakan berulang kali
@@ -13,3 +15,8 @@ basic function:
 - Menghentikan Eksekusi Function:
     - kata kunci 'return' dapat digunakan untuk menghentikan eksekusi function
     - setelah 'return' ditulis, maka kode di bawah 'return' tidak akan dieksekusi
+
+- Function Declaration
+- Function Expression
+- Arrow Function
+- IIFE (Immediately Invoked Function Expression)

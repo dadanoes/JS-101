@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="myParagraph">This is a paragraph.</p>
+    <button onclick="addDynamicCSS()">Add Dynamic CSS</button>
+
+    <script>
+      function addDynamicCSS() {
+        const style = document.createElement("style");
+        style.textContent = `
+        #myParagraph {
+          color: teal;
+          border: 2px solid black;
+          padding: 10px;
+        }
+      `;
+        document.head.appendChild(style);
+      }
+    </script>
+  </body>
+</html>

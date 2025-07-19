@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      <p id="first">First Paragraph</p>
+      <p id="second">Second Paragraph</p>
+      <p id="third">Third Paragraph</p>
+    </div>
+    <script>
+      const second = document.getElementById("second");
+      const prevSibling = second.previousElementSibling; // Access the previous sibling
+      const nextSibling = second.nextElementSibling; // Access the next sibling
+
+      console.log(prevSibling.id); // Output: first
+      console.log(nextSibling.id); // Output: third
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="judul">DOM Travelsal</h1>
+    <p>
+      DOM Travelsal merupakan teknik untuk mengakses elemen-elemen HTML secara
+      hirarki.
+    </p>
+    <ul id="list-item">
+      <li id="item1">Item 1</li>
+      <li id="item2">Item 2</li>
+      <li id="item3">Item 3</li>
+    </ul>
+    <script>
+      const listItem = document.getElementById("list-item");
+      const li1 = document.getElementById("item1");
+      console.log(listItem.firstElementChild);
+      console.log(listItem.lastElementChild);
+      console.log(li1.nextElementSibling);
+      console.log(item3.previousElementSibling);
+      console.log(listItem.children);
+      console.log(listItem.childNodes);
+      console.log(li1.parentNode);
+      console.log(li1.parentElement);
+    </script>
+  </body>
+</html>

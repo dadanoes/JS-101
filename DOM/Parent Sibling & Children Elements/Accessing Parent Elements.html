@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="parent">
+      <p id="child">This is a child element.</p>
+    </div>
+    <script>
+      const child = document.getElementById("child");
+      const parent = child.parentElement; // or child.parentNode
+      console.log(parent.id); // Output: parent
+    </script>
+  </body>
+</html>

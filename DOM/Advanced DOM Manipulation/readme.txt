@@ -1,0 +1,3 @@
+- penggunaan -data atribute
+- Kloning Node (cloneNode())
+- modifikasi style

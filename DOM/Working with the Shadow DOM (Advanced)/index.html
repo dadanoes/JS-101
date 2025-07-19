@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const shadowHost = document.createElement("div");
+      const shadowRoot = shadowHost.attachShadow({ mode: "open" });
+      shadowRoot.innerHTML = "<p>Shadow DOM Content</p>";
+      document.body.appendChild(shadowHost);
+    </script>
+  </body>
+</html>

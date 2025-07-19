@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="container">
+      <p>Text 1</p>
+      <p>Text 2</p>
+      <!-- A comment -->
+    </div>
+    <script>
+      const container = document.getElementById("container");
+      const nodes = container.childNodes; // Includes text, elements, and comments
+
+      nodes.forEach((node) => {
+        console.log(node.nodeName); // Output: #text, P, #text, P, #text, #comment
+      });
+    </script>
+  </body>
+</html>

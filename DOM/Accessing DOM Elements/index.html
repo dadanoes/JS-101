@@ -6,6 +6,26 @@
     <title>Document</title>
   </head>
   <body>
-    <script></script>
+    <h1 id="title">Halo</h1>
+    <p class="text">Selamat datang di website kami</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <script>
+      //getElementById
+      const title = document.getElementById("title");
+      console.log(title);
+      //getElementsByClassName
+      const text = document.getElementsByClassName("text");
+      //getElementsByTagName
+      const list = document.getElementsByTagName("li");
+      console.log(text);
+      console.log(list[2].textContent);
+      //querySelectorAll
+      const element = document.querySelectorAll("li");
+      console.log(element);
+    </script>
   </body>
 </html>

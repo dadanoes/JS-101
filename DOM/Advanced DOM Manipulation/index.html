@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Advanced DOM Manipulation</h1>
+    <div data-user-id="123">User</div>
+    <script>
+      const userDiv = document.querySelector("[data-user-id]");
+      console.log(userDiv.dataset.userId); // Output: "123"
+      const clonedItem = list.children[0].cloneNode(true); // true for deep clone
+      list.appendChild(clonedItem);
+      const header = document.getElementById("header");
+      header.style.backgroundColor = "lightblue";
+      header.style.fontSize = "24px";
+    </script>
+  </body>
+</html>

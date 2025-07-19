@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="container">
+      <h1>Header</h1>
+      <p>Paragraph 1</p>
+      <p id="middle">Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </div>
+    <script>
+      const middle = document.getElementById("middle");
+      const parent = middle.parentElement; // Access the parent
+      const firstChild = parent.firstElementChild; // Access first child of the parent
+      const lastChild = parent.lastElementChild; // Access last child of the parent
+      const nextSibling = middle.nextElementSibling; // Access the next sibling
+      const prevSibling = middle.previousElementSibling; // Access the previous sibling
+
+      console.log(parent.id); // Output: container
+      console.log(firstChild.tagName); // Output: H1
+      console.log(lastChild.tagName); // Output: P
+      console.log(nextSibling.textContent); // Output: Paragraph 3
+      console.log(prevSibling.textContent); // Output: Paragraph 1
+    </script>
+  </body>
+</html>

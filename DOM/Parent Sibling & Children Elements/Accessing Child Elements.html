@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul id="myList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <script>
+      const list = document.getElementById("myList");
+      const children = list.children; // Get all child elements
+      const firstChild = list.firstElementChild; // First child
+      const lastChild = list.lastElementChild; // Last child
+
+      console.log(children.length); // Output: 3
+      console.log(firstChild.textContent); // Output: Item 1
+      console.log(lastChild.textContent); // Output: Item 3
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .boldText {
+        font-weight: bold;
+      }
+      .redText {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myParagraph">This is a paragraph.</p>
+    <button onclick="toggleStyles()">Toggle Styles</button>
+
+    <script>
+      function toggleStyles() {
+        const paragraph = document.getElementById("myParagraph");
+        paragraph.classList.toggle("boldText"); // Toggles boldText class
+        paragraph.classList.toggle("redText"); // Toggles redText class
+      }
+    </script>
+  </body>
+</html>

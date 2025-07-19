@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="container">
+      <p class="descendant">Paragraph 1</p>
+      <p class="descendant">Paragraph 2</p>
+      <p class="descendant">Paragraph 3</p>
+    </div>
+    <script>
+      const container = document.getElementById("container");
+      const descendants = container.querySelectorAll(".descendant"); // Select all descendants with the class 'descendant'
+
+      descendants.forEach((descendant) => {
+        console.log(descendant.textContent); // Output: Paragraph 1, Paragraph 2, Paragraph 3
+      });
+
+      //   Use the querySelectorAll method to select all descendants matching a specific selector.
+    </script>
+  </body>
+</html>

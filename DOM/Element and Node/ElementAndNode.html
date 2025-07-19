@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="myDiv">
+      Hello, <span>world!</span
+      ><!-- Comment -->
+    </div>
+    <script>
+      const div = document.getElementById("myDiv");
+
+      // 1. Access the Node type of the <div>
+      console.log(div.nodeType); // Output: 1 (Element node)
+
+      // 2. Access child nodes of the <div>
+      console.log(div.childNodes);
+      // Output: NodeList(3) [#text, <span>, #comment]
+      // Includes text ("Hello, "), an element (<span>), and a comment.
+
+      // 3. Access the children of the <div> (Element-specific)
+      console.log(div.children);
+      // Output: HTMLCollection [<span>]
+      // Includes only the child elements (ignores text and comments).
+
+      // 4. Check node vs element
+      const textNode = div.childNodes[0];
+      const spanElement = div.children[0];
+      console.log(textNode.nodeType); // Output: 3 (Text node)
+      console.log(spanElement.nodeType); // Output: 1 (Element node)
+
+      // 5. Working with Element-specific properties
+      console.log(spanElement.tagName); // Output: SPAN
+      console.log(textNode.tagName); // Output: undefined (Text nodes have no tagName)
+    </script>
+  </body>
+</html>

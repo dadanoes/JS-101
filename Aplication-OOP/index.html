@@ -19,7 +19,30 @@
       <section id="product-list"></section>
     </main>
     <!-- MODAL -->
-
+    <div class="modal" id="cart-modal">
+      <div class="modal-content">
+        <span onclick="shopingCart.toggleCart()" class="close">&times;</span>
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+          <!-- list dari product keranjang -->
+        </ul>
+        <div class="total-price">Total: $<span id="total-price">0</span></div>
+      </div>
+    </div>
+    <!-- modal untuk detail produk -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="shopingCart.toggleProductDetail()"
+          >&times;
+        </span>
+        <img src="" alt="Product Image" id="detail-image" />
+        <h2 id="detail-title"></h2>
+        <p id="detail-description"></p>
+        <button id="add-to-cart-btn" ondblclick="addToCart()">
+          Add to Cart
+        </button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

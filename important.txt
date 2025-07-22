@@ -31,8 +31,9 @@ Object adalah kumpulan data yg berisi field/properties/attribute dan method/func
           - berisi semua properties dan function yang dimiliki oleh Object
           - setiap Object selalu dibuat dari Class
           - dan sebuah class bisa membuat Object tanpa batas
-- Polimorfisme memungkinkan metode memiliki perilaku yang berbeda.
+- Polimorphism = menggunakan method yang sama pada object yang berbeda
 - This =  mengacu pada instance objek saat ini.
     - dalam Method, this mengacu kepada object tempat method dipanggil
     - dalam Function, this mengacu kepada object global (web/window)
 - Getter/Setter = mendefinisikan metode yang bertindak seperti properti (menyederhanakan akses properti)
+- Abstraction(abstraksi) = proses menyembunyikan detail implementasi dari pengguna, dan hanya menampilkan esensi atau fitur utama

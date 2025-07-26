@@ -1,11 +1,3 @@
-Error Handling adalah proses menangani kesalan dalam code agar kode tidak crash atau berhenti tiba-tiba
-cara:
-- try..catch
-- finally
-- membuat error custom
-- menangani error dalam async
-
-Try - Catch - Finally
--Try untuk menjalankan kode
-- Catch untuk menangkap error
-- Finally untuk menjalankan kode yg perlu dieksekusi terlepas dari terjadi error atau tdak (sifatnya opsional)
+try: Anda menempatkan kode yang ingin Anda pantau untuk error di sini.
+catch (error): Jika error terjadi di dalam blok try, eksekusi akan langsung melompat ke blok catch. Variabel error akan berisi objek error yang memberikan detail tentang apa yang salah (misalnya, error.name untuk jenis error dan error.message untuk deskripsinya).
+finally (opsional): Blok ini akan selalu dieksekusi setelah try dan catch selesai, terlepas dari apakah error terjadi atau tidak. Ini sering digunakan untuk membersihkan sumber daya (misalnya, menutup koneksi file, membatalkan timer).

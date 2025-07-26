@@ -25,7 +25,6 @@ const person = {
   age: 27,
   from: "Indonesia",
 };
-
 const person2 = {
   firstName: "Sponge",
   lastName: "Bob",
@@ -43,7 +42,6 @@ function displayNama({ nama }) {
   console.log(`age: ${age}`);
   console.log(`from: ${from}`);
 }
-
 const nama = {
   firstName: "Dadan",
   lastName: "Nurohman",

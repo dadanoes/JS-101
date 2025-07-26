@@ -1,0 +1,21 @@
+========== IF ELSE STATEMENT =============
+if...else statement adalah struktur kontrol pernyataan kondisi (conditional statement)
+digunakan untuk membuat keputusan pada kondisi tertentu
+- jika kondisi benar (true) maka program akan dijalankan
+- jika kondisi salah (false) maka program lain yang akan dijalankan
+
+
+========== IF-ELSE-IF STATEMENT ============
+if-else-if digunakan untuk mengecek kondisi secara berurutan
+
+========== NESTED IF-ELSE (IF-ELSE BERTINGKAT) STATEMENT ============
+nested if-else digunakan untuk mengecek kondisi di dalam kondisi
+
+========== SWITCH STATEMENT ============
+switch statement digunakan untuk kondisi yang sangat banyak
+dijalankan berdasarkan nilai dari sebuah ekspresi
+pengganti if-else statement
+
+========== TERNARY (?) STATEMENT ============
+ternary statement adalah bentuk singkat dari if-else statement
+

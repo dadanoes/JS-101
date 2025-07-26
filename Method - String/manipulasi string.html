@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ⁡⁢⁣⁣​‌‍‌=========== 𝗠𝗔𝗡𝗜𝗣𝗨𝗟𝗔𝗦𝗜 𝗦𝗧𝗥𝗜𝗡𝗚 ===============​⁡ //
+
+      // ⁡⁣⁢⁣CONCATE (penggabungan)⁡
+
+      // 1. menggabungkan 2 string (memakai $ lebih disukai)
+      let fistName = "Dadan";
+      let lastName = "Nurohman";
+      console.log(`Nama saya: ${fistName} ${lastName}`); //output Dadan Nurohman
+
+      // 2. menggabungkan 2 string dengan menggunakan operator +
+      console.log("Nama saya: " + fistName + " " + lastName); //output Dadan Nurohman
+
+      // ⁡⁣⁢⁣TRIM() ⁡menghilangkan spasi di awal dan di akhir (TRIM)
+      let str2 = "    Dadan Nurohman    ";
+      console.log(str2.trim()); //output Dadan Nurohman
+
+      // ⁡⁣⁢⁣REPLACE()⁡ menghilangkan karakter tertentu
+      console.log(str2.replace(" ", "")); //output DadanNurohman
+
+      // ⁡⁣⁢⁣REPLACEALL() ⁡menghilangkan semua karakter tertentu(REPLACEALL)
+      console.log(str2.replaceAll("a", "")); //output Ddn Nurohmn
+
+      // ⁡⁣⁢⁣SLICE()⁡ mengambil karakter tertentu
+      let text = "Dadan";
+      console.log(text.slice(0, 2)); //output Da (mengambil 2 huruf awal)
+
+      // ⁡⁣⁢⁣SPLIT()⁡ memecah string menjadi array
+      const testString = "Test-Array-di-String";
+      console.log(testString.split("-", 3)); //output ["Test", "Array", "di"]
+
+      // ⁡⁣⁢⁣REPLACE()⁡ mengganti bagian string dengan bagian string baru
+      let namaAsli = "Dadan Nurohman";
+      console.log(namaAsli.replace("Dadan", "javascript")); //output javascript Nurohman mengganti Dadan dengan javascript
+
+      // ⁡⁣⁢⁣STR.JOIN()⁡ menggabungkan array menjadi string
+      let array = ["Dadan", "Nurohman"];
+      console.log(array.join(" ")); //output Dadan Nurohman
+    </script>
+  </body>
+</html>

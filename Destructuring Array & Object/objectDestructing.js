@@ -7,10 +7,7 @@ const namaOrang = {
   age: 30,
   occupation: "Developer",
 };
-
-// Destructuring
-const { name, age } = namaOrang;
-
+const { name, age } = namaOrang; // Destructuring
 console.log(namaOrang); // Output: John Doe
 console.log(age); // Output: 30
 
@@ -20,9 +17,7 @@ const person = {
   name: "marcelo",
   age: 12,
 };
-
 const { name: fullName, age: years } = person; // perubahan dari name jadi fullName, age menjadi years
-
 console.log(fullName); // Output: marcelo
 console.log(years); // Output: 12
 
@@ -73,7 +68,6 @@ const {
     theme,
   },
 } = userProfile;
-
 console.log(id); // Output: 123
 console.log(firstName); // Output: Budi
 console.log(lastName); // Output: Santoso
@@ -89,23 +83,18 @@ const person2 = {
   age: 27,
   occupation: "Developer",
 };
-
 const { namanya, ...rest } = person2;
-
 console.log(namanya); // Output: John
 console.log(rest); // Output: { age: 27, occupation: 'Developer' }
 
 // 6. Destructuring in Function Parameters (Destructing di parameter fungsi)
-
 const mahasiswa = {
   namaMahasiswa: "Ridho",
   age: 23,
 };
-
 function greet({ namaMahasiswa, age }) {
   console.log(`Hello, my name is ${namaMahasiswa} and I am ${age} years old.`);
 }
-
 greet(mahasiswa); // Output: Hello, my name is Ridho and I am 23 years old.
 
 // 7. Dynamic Property Keys
@@ -115,7 +104,5 @@ const mobil = {
   brand: ["BMW", "Honda"],
   tipe: "SUV",
 };
-
 const { [key]: value } = mobil;
-
 console.log(value); // Output:

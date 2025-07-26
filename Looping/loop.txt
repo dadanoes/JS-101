@@ -1,0 +1,37 @@
+=========== LOOPS ========
+
+1. For LOOPS
+digunakan ketika jumlah iterasi sudah diketahui
+sintaks:
+for (inisialisasi; kondisi; iterasi) {
+  // kode yang akan dijalankan
+}
+inisialisasi = Nilai awal variable loop
+kondisi = kondisi yang akan diuji setiap iterasi
+iterasi = perubahan nilai variable loop
+
+2. While loop
+digunakan ketika jumlah iterasi tidak diketahui
+berjalan selama suatu kondisi bernilai benar.
+
+3. Do-While Loop
+Loop do-while mirip dengan while loop, tetapi menjamin bahwa blok kode akan berjalan setidaknya satu kali, 
+bahkan jika kondisinya salah di awal. 
+
+4. For...of Loop
+Loop for...of digunakan untuk melakukan iterasi atas elemen-elemen dalam sebuah array atau objek iterable lainnya.
+
+5. For...in Loop
+Loop for...in digunakan untuk mengiterasi atas properti-properti dari objek.
+
+======== kapan menggunakan loop ========
+- Ketika kita ingin mengakses setiap elemen dalam array atau objek.
+- Ketika kita ingin mengulang kode sejumlah tertentu.
+- Ketika kita ingin mengulang kode selama kondisi tertentu terpenuhi.
+
+======= kapan menggunakan loop yang berbeda ========
+- For: Digunakan ketika kita tahu berapa banyak iterasi yang akan dilakukan.
+- While: Digunakan ketika kita tidak tahu berapa banyak iterasi yang akan dilakukan.
+- Do...while: Mirip dengan while, tetapi menjamin bahwa blok kode akan dijalankan setidaknya sekali.
+- For...of: Digunakan untuk iterasi atas elemen-elemen dalam array atau objek iterable.
+- For...in: Digunakan untuk iterasi atas properti-properti dari objek.

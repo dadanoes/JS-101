@@ -51,13 +51,3 @@ class ShopingCart {
     });
   }
 }
-
-viewProductDetail(id) {
-  const product = this.products.find(product = p.id === id)
-  document.getElementById(`detail-image`).src = product.image;
-  document.getElementById(`detail-title`).textContent = product.name;
-  document.getElementById(`detail-description`).textContent = product.description;
-  document.getElementById(`detail-price`).textContent = `$${product.price.toFixed(2)}`;
-  document.getElementById(`detail-add-to-cart-btn`).setAttribute(`onclick`, `shopingCart.addToCart(${id}, true)`);
-this.toggleProductDetail();
-}

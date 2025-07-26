@@ -4,6 +4,14 @@ function greet(name) {
 }
 greet("Dadan");
 
+// Function expression
+const add = function (a, b) {
+  return a + b;
+};
+
+// Calling the function
+console.log(add(2, 3)); // Output: 5
+
 //------ Function Parameter/Function Argumen
 function sayHello(firstName, lastName) {
   console.log(`halo: ${firstName} ${lastName}`);

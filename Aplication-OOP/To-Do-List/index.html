@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todolist</title>
+  </head>
+  <body>
+    <form name="todoForm">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="todo">Todo:</label></td>
+            <td><input type="text" id="todo" name="todo" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Add" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <h1>Todolist</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Filter:</th>
+          <th><input type="text" name="search" id="search" /></th>
+        </tr>
+      </thead>
+      <tbody id="todolistBody">
+        <tr>
+          <td><input type="button" value="Done" /></td>
+          <td>Todo Description</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      // Array untuk menyimpan daftar tugas. Ini adalah data utama aplikasi kita.
+      const todolist = [
+        "Belajar JavaScript Dasar",
+        "Belajar JavaScript Object Oriented Programming",
+        "Belajar JavaScript Document Object Model",
+      ];
+
+      // Fungsi ini bertugas menghapus semua elemen daftar tugas dari tampilan HTML.
+      function clearTodolist() {
+        const todolistBody = document.getElementById("todolistBody"); // Ambil elemen <tbody> tempat daftar tugas ditampilkan.
+        while (todolistBody.firstChild) {
+          // Lakukan perulangan selama elemen <tbody> masih punya anak (baris tugas).
+          todolistBody.removeChild(todolistBody.firstChild); // Hapus anak pertama (baris teratas) dari <tbody>. Ini akan terus berulang sampai <tbody> kosong.
+        }
+      }
+
+      // Fungsi ini menghapus satu tugas dari array 'todolist' berdasarkan indeksnya.
+      function removeTodoList(index) {
+        todolist.splice(index, 1); // Gunakan method splice() untuk menghapus 1 elemen di posisi 'index'.
+        displayTodolist(); // Panggil fungsi displayTodolist() untuk memperbarui tampilan setelah tugas dihapus.
+      }
+
+      // Fungsi ini membuat satu baris (<tr>) untuk satu tugas di tampilan HTML.
+      function addTodoList(index, todo) {
+        const tr = document.createElement("tr"); // Buat elemen <tr> baru.
+        const tdButton = document.createElement("td"); // Buat elemen <td> untuk menampung tombol.
+        tr.appendChild(tdButton); // Tambahkan <td> ke dalam <tr>.
+
+        const buttonDone = document.createElement("input"); // Buat elemen <input> baru (untuk tombol).
+        buttonDone.type = "button"; // Tipe input-nya adalah 'button'.
+        buttonDone.value = "Done"; // Teks di tombolnya adalah "Done".
+        buttonDone.onclick = function () {
+          // Ketika tombol ini diklik...
+          removeTodoList(index); // ...panggil fungsi removeTodoList() untuk menghapus tugas ini.
+        };
+        tdButton.appendChild(buttonDone); // Tambahkan tombol ke dalam <td>.
+
+        const tdTodo = document.createElement("td"); // Buat elemen <td> baru untuk teks tugas.
+        tdTodo.textContent = todo; // Isi teks <td> dengan string tugas (misalnya: "Belajar JavaScript Dasar").
+        tr.appendChild(tdTodo); // Tambahkan <td> ini ke dalam <tr>.
+
+        const todolistBody = document.getElementById("todolistBody"); // Ambil elemen <tbody> lagi.
+        todolistBody.appendChild(tr); // Tambahkan baris tugas (<tr>) yang sudah dibuat ke dalam <tbody>.
+      }
+
+      // Fungsi utama untuk menampilkan semua tugas dari array 'todolist' ke halaman web.
+      function displayTodolist() {
+        clearTodolist(); // Pertama, bersihkan tampilan yang lama.
+
+        for (let i = 0; i < todolist.length; i++) {
+          // Lakukan perulangan untuk setiap tugas di array 'todolist'.
+          const todo = todolist[i]; // Ambil tugas saat ini.
+
+          const searchText = document
+            .getElementById("search")
+            .value.toLowerCase(); // Ambil teks dari input pencarian dan ubah ke huruf kecil.
+
+          if (todo.toLowerCase().includes(searchText)) {
+            // Cek apakah teks tugas (setelah diubah ke huruf kecil) mengandung teks pencarian.
+            addTodoList(i, todo); // Jika ya, panggil addTodoList() untuk menampilkannya.
+          }
+        }
+      }
+
+      // Kode ini berjalan saat formulir dengan nama 'todoForm' di-submit (tombol 'Add' ditekan).
+      document.forms["todoForm"].onsubmit = function (event) {
+        event.preventDefault(); // Mencegah halaman memuat ulang (perilaku default formulir).
+
+        const todo = document.forms["todoForm"]["todo"].value; // Ambil teks dari input 'todo' di dalam formulir.
+        todolist.push(todo); // Tambahkan teks tugas baru ke akhir array 'todolist'.
+
+        document.forms["todoForm"].reset(); // Kosongkan formulir setelah data diambil.
+
+        console.info(todolist); // Tampilkan array 'todolist' ke konsol (untuk debugging).
+        displayTodolist(); // Panggil fungsi ini untuk memperbarui tampilan dengan tugas yang baru.
+      };
+
+      // Ambil elemen input pencarian.
+      const searchInput = document.getElementById("search");
+
+      // Kode ini berjalan setiap kali tombol dilepas (keyup) di input pencarian.
+      searchInput.onkeyup = function () {
+        displayTodolist(); // Panggil displayTodolist() untuk memfilter daftar.
+      };
+
+      // Kode ini juga berjalan setiap kali tombol ditekan (keydown) di input pencarian.
+      searchInput.onkeydown = function () {
+        displayTodolist(); // Panggil displayTodolist() lagi untuk memastikan filter berjalan lancar.
+      };
+
+      // Baris ini dijalankan sekali saat halaman pertama kali dimuat.
+      displayTodolist(); // Tujuannya adalah untuk menampilkan daftar tugas awal yang sudah ada di array.
+    </script>
+  </body>
+</html>

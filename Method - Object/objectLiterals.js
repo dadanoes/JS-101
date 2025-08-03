@@ -1,0 +1,59 @@
+/* OBJECT LITERAL */
+const mahasiswa1 = {
+  nama: "Dadan Nurohman",
+  umur: 27,
+  email: "dans@gmail.com",
+};
+
+/* OBJECT CONSTRUCTOR */
+function Mahasiswa(nama, umur, email) {
+  this.nama = nama;
+  this.umur = umur;
+  this.email = email;
+}
+
+/* ========== Penulisan Object ========= */
+// Metode adalah fungsi yang dimiliki oleh object.
+
+// 1. Menggunakan titik (dot notation)
+console.log(mahasiswa1.nama);
+
+// 2. Menggunakan notasi kurung (Bracket Notation)
+console.log(mahasiswa1["umur"]);
+
+/* ========== MENAMBAHKAN PROPERTI (NESTED OBJEK) ========= */
+const user = {
+  name: "Alice",
+  age: 30,
+  address: {
+    // Ini adalah nested object
+    street: "123 Main St",
+    city: "Anytown",
+    zipCode: "12345",
+  },
+  contacts: {
+    // Ini juga nested object
+    email: "alice@example.com",
+    phone: "555-1234",
+  },
+};
+console.log("contoh mengakses nested object", user.address.city); // Output: Anytown
+
+/* ========== MENGUBAH NILAI PROPERTI OBJEK ========= */
+// Mengubah nilai properti object
+user.age = 28;
+console.log("contoh mengubah umur user", user.age); // Output 28
+
+/* ========== MENGHAPUS PROPERTI OBJEK ========= */
+// Menghapus properti object
+delete user.name;
+console.log("ini contoh hapus properti object", user); // Output tidak ada properti name
+
+/* ========== MEMERIKSA PROPERTI OBJEK ========= */
+// Memeriksa apakah properti ada
+console.log("age" in user); // true
+console.log("works" in user); // false
+
+/* ========== MENGAMBIL SEMUA PROPERTI OBJEK ========= */
+// Menampilkan semua properti object
+console.log(user);

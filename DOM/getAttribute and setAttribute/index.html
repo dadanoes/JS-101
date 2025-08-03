@@ -2,17 +2,6 @@
 <html>
   <body>
     <div id="info" data-user-id="12345" data-role="admin">User Info</div>
-    <script>
-      const info = document.getElementById("info");
-      const userId = info.getAttribute("data-user-id"); // Read custom attribute
-      const role = info.getAttribute("data-role"); // Read custom attribute
-
-      console.log(userId); // Output: 12345
-      console.log(role); // Output: admin
-
-      // Modify custom attributes
-      info.setAttribute("data-role", "super-admin");
-      console.log(info.getAttribute("data-role")); // Output: super-admin
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,10 @@
+const listItem = document.getElementById("list-item");
+const li1 = document.getElementById("item1");
+console.log(listItem.firstElementChild);
+console.log(listItem.lastElementChild);
+console.log(li1.nextElementSibling);
+console.log(item3.previousElementSibling);
+console.log(listItem.children);
+console.log(listItem.childNodes);
+console.log(li1.parentNode);
+console.log(li1.parentElement);

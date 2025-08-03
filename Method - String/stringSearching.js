@@ -1,0 +1,32 @@
+// ⁡⁢⁣⁣​‌‍‌=========== 𝗣𝗘𝗡𝗖𝗔𝗥𝗜𝗔𝗡 𝗗𝗔𝗟𝗔𝗠 𝗦𝗧𝗥𝗜𝗡𝗚 ===============​⁡ //
+
+// ⁡⁣⁢⁣INDEX.OF()⁡ mencari index karakter
+let sentense = "Hokage Naruto Uzumaki";
+let index = sentense.indexOf("Naruto");
+console.log(index); //output 7
+
+// ⁡⁣⁢⁣LASTINDEX.OF()⁡ mencari index karakter dari belakang
+let sentense2 = "The Quick Lazy Fox";
+let index2 = sentense2.lastIndexOf("Lazy");
+console.log(index2); //10
+
+// ⁡⁣⁢⁣INCLUDES()⁡ mengecek true jika string mengandung karakter tertentu, sebaliknya false
+let sentense3 = "The Quick Lazy Fox";
+let exist = sentense3.includes("Lazy");
+console.log(exist); //output true
+
+// ⁡⁣⁢⁣STARTSWITH()⁡ mengecek apakah string diawali dengan karakter tertentu
+let sentense4 = "The Quick Lazy Fox";
+let startWith = sentense4.startsWith("The");
+console.log(startWith); //output true
+
+// ⁡⁣⁢⁣ENDSWITH()⁡ mengecek apakah string diakhiri dengan karakter tertentu
+let sentense5 = "The Quick Lazy Fox";
+let endWith = sentense5.endsWith("Fox");
+console.log(endWith); //output true
+
+// ⁡⁣⁢⁣SEARCH()⁡ Mencari kecocokan untuk ekspresi reguler (regular expression) di dalam sebuah string.
+let dataProduk = "Kode produk: ABC123DEF, Harga: 50000.";
+// Mencari deretan angka (misal, kode produk)
+let posisiAngka = dataProduk.search(/\d+/);
+console.log(posisiAngka); // Output: 11 (indeks '1' dari "123")

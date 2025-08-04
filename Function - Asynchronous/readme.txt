@@ -24,3 +24,10 @@ Status-status sebuah Promise:
  - Pending (Menunggu): Promise masih dalam proses (operasi belum selesai).
  - Fulfilled (Terpenuhi/Berhasil): Operasi telah berhasil diselesaikan, dan promise memiliki hasil.
  - Rejected (Ditolak/Gagal): Operasi telah gagal, dan promise memiliki kesalahan atau alasan kegagalan.
+
+Promise State:
+State:           pending        fulfilled           rejected
+Result:          undifined      value               error
+
+Promise dibuat untuk terhindar dari masalah "Callback Hell", 
+situasi dimana fungsi callback terlalu banyak dan bersarang (nested) didalam satu sama lain

@@ -1,3 +1,10 @@
+// function declaration (tradisional)
+function calculator(a, b) {
+  return a / b;
+}
+
+console.log(calculator(10, 5));
+
 // contoh sederhana:
 let calculator = (a, b) => a / b;
 console.log(calculator(10, 5));

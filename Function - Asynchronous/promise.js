@@ -3,6 +3,7 @@
 // 1. MEMBUAT PROMISE
 // Fungsi ini mensimulasikan proses download data yang butuh waktu dan bisa gagal.
 // Fungsi ini mengembalikan sebuah Promise.
+// promise menggunakan 'Resolve' dan 'Reject'
 const downloadData = (isSuccess) => {
   return new Promise((resolve, reject) => {
     console.log("Proses download dimulai...");
